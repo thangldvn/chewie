@@ -95,7 +95,9 @@ class _CupertinoControlsState extends State<CupertinoControls>
             children: [
               if (_displayBufferingIndicator)
                 const Center(
-                  child: CircularProgressIndicator(),
+                  child: CircularProgressIndicator(
+                    color: Color(0xFFFF914D)
+                  ),
                 )
               else
                 _buildHitArea(),
